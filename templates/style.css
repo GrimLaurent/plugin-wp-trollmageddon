@@ -1,0 +1,510 @@
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*LEGAL*/
+
+	#trollmageddon_legal header {
+		background-color: #880000;
+		height: 3em;
+		position: fixed;
+		z-index: 9999;
+	}
+
+	#trollmageddon_legal header a > span {
+		font-size: 2em;
+		text-align: center;
+		vertical-align: middle;
+		margin: 0.2em;
+		color: white;
+		text-decoration: none;
+		float: left;
+	}
+
+	#trollmageddon_legal header p {
+		float: left;
+		font-size: 1em;
+		margin: 0.6em 1em;
+		color: white;
+	}
+
+	#trollmageddon_legal .conteneur > div {
+		padding-top: 4em;
+		margin:0 2%; 
+	}
+
+@media screen and (min-width: 768px) {
+	#trollmageddon_legal header {
+		height: 4em;
+	}
+
+	#trollmageddon_legal header a > span {
+		font-size: 3em;
+		margin: 0.15em;
+	}
+
+	#trollmageddon_legal header p {
+		font-size: 1.7em;
+		margin: 0.35em 2em;
+	}
+
+	#trollmageddon_legal .conteneur > div {
+		margin: 4em auto 0;
+		padding-top: 0;
+	}
+}
+
+
+/*FIN LEGAL*/
+
+#lastEvent{
+    overflow: auto;
+    padding-top: 70px;
+    margin-right: -1000px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: rgb(224, 224, 224);
+    z-index: 998;
+    transition-duration: 0.6s;
+    box-shadow: 0px 0px 60px black;
+    padding: 0;
+    width: 320px;
+}
+
+#mn_event{
+	padding: 0 0 4em 0;
+}
+
+.btnLastEvent{
+    width: 60px;
+    height: 60px;
+    /*
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    */
+    border-radius: 50%;
+    background-color: #880000;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    /*
+    bottom: 50px;
+    right: 50px;
+    */
+    z-index: 9999;
+    transition-duration: 0.6s;
+    box-shadow: 0px 0px 30px #888888;
+}
+
+.btnLastEvent:hover {
+    background-color: #ffffff;
+}
+
+.btnLastEvent .dashicons-calendar-alt:hover {
+    color: #880000;
+}
+
+
+.btnLastEvent .dashicons-calendar-alt{
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 32px !important;
+    margin: 11px auto !important;
+    cursor: pointer;
+    /*width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 50px !important;
+    margin: auto !important;
+    cursor: pointer;*/
+    transition-duration: 0.6s;
+}
+
+#event-item .textwidget > h2,
+#event-item .textwidget code > h2 {
+    font-size: 1.4em;
+
+}
+
+.textwidget > code,
+.textwidget code > a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.textwidget > h2, .textwidget code > h2 {
+    width: 100%;
+    text-align: center;
+    padding: 0.2em 0;
+}
+
+.textwidget > h2 > code {
+    color: rgb(43, 43, 43);
+}
+
+.li_events {
+        background-color: yellow;
+    padding: 0.3em 1.3em;
+    margin: 0.4em;
+}
+
+#mn_event #mn_bottom{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    background: white;
+}
+
+.btn_close_mn span{
+    height: 2em;
+    width: 2em;
+    margin: 0.6em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+
+.dashicons-no-alt::before {
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+#mn_bottom ul {
+    float: right;
+    width: 100%;
+    padding-left: 0;
+}
+
+#mn_bottom li,
+#mn_bottom span,
+#mn_bottom .menu-menu-devents-container {
+    float: left;
+}
+
+#mn_bottom li {
+list-style-type: none;
+width: 28%;
+height: 3.125em;
+background: red;
+margin: 0.4em 0.2em;
+}
+
+
+ #menu-menu-devents li:nth-child(n+4) { 
+    display: none;
+  }
+
+/*------------------ Page de login ---------------------------------*/
+body{
+	font-family:Libre Franklin,Helvetica Neue, helvetica, arial , sans-serif !important;
+}
+.conteneur{
+	padding-top:0;
+}
+.wrap{
+	background-color:white;
+	padding: 10px;
+}
+.wrap .message_perso{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.warningMsg{
+	color:red;
+}
+.messageText>p{
+	border-left: 2px solid #880000;
+	padding-left: 15px;
+}
+
+.logoLogin {
+	padding: 1em;
+}
+.logoLogin img{
+	width:100% !important;
+	height: 100% !important;
+}
+.descLogin{
+	padding-top: 25px;
+	color: #880000;
+	display:none;
+	
+}
+.currentPage{
+	text-transform: uppercase;
+	color:#880000;
+	margin-bottom:20px;
+}
+
+.sav_login label > input{
+	margin: 0 0.5em;
+}
+
+#legals_information_form h2 {
+	font-size: 0.9em;
+}
+#legals_information_form .textwidget {
+	font-size: 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+	.descLogin {
+		display:block;
+	}
+	  .conteneur{
+		padding:50px;
+	}
+	body{
+		background-image: url("img/pattern.png");
+		background-size:20%;
+	}
+	.moreOptionsBox{
+		position:relative !important;
+		top:0 !important;
+	}
+	.wrap{
+		box-shadow: 5px 5px 20px black;
+	}
+
+	.trollmageddon_conteneur {
+		margin: auto;
+		padding-bottom: 20px;
+	}
+} 
+
+.thumbnail>img{
+	max-width:100%;
+	height:auto;
+}
+/* --------------------- Icon identifiant -----------------------*/
+
+input[type="text"], input[type="password"] {
+    position: relative;
+	background:transparent;
+	height: 50px;
+	border:none;
+	width:calc(100% - 50px) ;
+	padding-left: 15px;
+}
+
+input:focus{
+	outline: none;
+	
+}
+.iconIdentifiant{
+   
+    width: 50px;
+    height: 50px;
+    display: block;
+  
+    background-image: url('img/troll_connexion.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 80%;
+  
+}
+
+.inputIdentifiant, .inputMdp, .inputNom, .inputPrenom,
+.inputEmail, .inputUsername, .inputPassword, .inputRepassword, .inputNoPassword {
+	border-bottom: 1px solid #d4d4d4;
+	transition-duration: 0.3s;
+}
+
+.iconMdp{
+   
+    width: 50px;
+    height: 50px;
+    display: block;
+  
+    background-image: url('img/cadenas.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 80%;
+  
+}
+
+.buttonLogin{
+	font-weight:bold;
+	width:100%;
+	height:50px;
+	border:none;
+	background-color:#880000;
+	color:white;
+	cursor:pointer;
+}
+
+.buttonLogin:hover{
+	background-color:#790303;
+	text-decoration:none;
+}
+
+.moreOptionsBox{
+	border: 2px solid #880000;
+	border-top:none;
+	width:100%;
+	display: none;
+	position: absolute;
+	height:0;
+	transition-duration: 0.3s;
+	background-color: white;
+}
+
+.moreOptionsBox a{
+	display: none;
+	transition-duration: 0.3s;
+	text-align:center;
+	height: 40px;
+	line-height:40px;
+	vertical-align:middle;
+	color: black;
+}
+
+.moreOptionsBox a:hover{
+	background-color: #880000;
+	color: white;
+	text-decoration:none;
+}
+
+a.moreOptions{
+	text-decoration:none;
+	background-color: #880000;
+	color: white;
+	line-height:50px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+a.moreOptions:hover{
+	background-color:#790303;
+}
+
+a.moreOptions span{
+	line-height: 50px;
+	vertical-align: middle;
+	float:right;
+}
+
+a.backLogin{
+	text-decoration:none;
+	color: white;
+	line-height:50px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+/*------------------ Page de validation ---------------------------------*/
+
+#validate_information_form h2.nwa-title{
+	text-align: center;
+	color: #880000;
+}
+
+#validate_information_form .textwidget{
+	text-align: center;
+	color: #880000;
+	font-weight: bold;
+}
+
+.menu-validation-de-compte-container{
+	width: 100%;
+}
+
+#menu-validation-de-compte{
+	padding:0;
+	list-style: none;
+}
+
+/*------------------ Footer connexion ---------------------------------*/
+
+.footer-connexion{
+	margin: auto;
+	font-size: 0.6em;
+	margin-top: 4em;
+}
+
+.footer-connexion ul{
+	list-style: none;
+}
+
+.menu-legals-container {
+	text-align: center;
+}
+
+	/*--------------------- Menu social / legal ----------------------*/
+	
+@media screen and (min-width: 768px) {
+	
+	.legal{
+		text-align: center;
+	}
+	
+	ul#menu-legals{
+		display: inline-block;
+	}
+	
+	ul#menu-legals li{
+		float: left;
+	}
+	
+	ul#menu-legals li a{
+		padding: 10px;
+	}
+}
+
+ul#menu-legals{
+	color: black;
+	margin: 0 0 20px 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul#menu-legals li a{
+	color: black;
+}
+
+.social{
+	position: relative;
+	text-align: center;
+}	
+
+.menu-social-container{
+	margin: auto;
+}	
+
+ul#menu-social{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}	
+
+li.item-container{
+	float: left;
+	display: block;
+	padding: 0 10px;
+}
+
+li.item-container a.menu-item{
+	text-decoration: none;
+	color: #880000;
+	height:30px;
+	width:30px;
+	background-size: 50px 50px;
+}
+
+li.item-container a.menu-item:before{
+	display: block;
+	font-size: 30px;
+}
+
+li.item-container a.menu-item:hover{
+	color:#790303;
+	
+}
